@@ -1,0 +1,9 @@
+*.lst
+*.obj
+*.load
+*.tmp
+output/SALBRUT.reel.txt
+output/SALNET.reel.txt
+.DS_Store
+Thumbs.db
+*.swp
