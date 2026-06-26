@@ -62,6 +62,25 @@ Pos 52-80  : Filler
 
 ---
 
+### Structure du fichier de sortie (LRECL=132)
+
+```
+Pos 01-08  : Matricule     PIC X(08)
+Pos 09-10  : Filler        PIC X(02)
+Pos 11-31  : Nom           PIC X(20)
+Pos 32-33  : Filler        PIC X(02)
+Pos 34-49  : Prénom        PIC X(15)
+Pos 50-51  : Filler        PIC X(02)
+Pos 52-59  : Salaire brut  PIC 9(06)V99  (ex: 00280000 = 2800,00 €)
+Pos 01-08  : Filler        PIC X(02)
+Pos 44-51  : Cotisations   PIC 9(06)V99
+Pos 01-08  : Filler        PIC X(02)
+Pos 44-51  : Salaire net   PIC 9(06)V99
+Pos 01-08  : Filler        PIC X(40)
+```
+
+---
+
 ## Les 3 étapes du cycle de vie
 
 ### Étape 1 — Compilation (`CALCSALJ.jcl`)
