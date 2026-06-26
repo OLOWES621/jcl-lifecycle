@@ -1,4 +1,4 @@
-# jcl-lifecycle - Cycle de vie d'un programme COBOL sur z/OS
+# jcl-lifecycle : Cycle de vie d'un programme COBOL sur z/OS
 
 > **Projet pédagogique** : Illustre les 3 étapes fondamentales du cycle de vie
 > d'un programme COBOL sur mainframe z/OS : compilation (module objet + link-edit), exécution.
@@ -28,7 +28,7 @@ jcl-lifecycle/
 ├── jcl/
 │   └── CALCSALJ.jcl         # JCL tout-en-un (compilation et exécution du programme)
 │
-├── IO/
+├── io/
 │   ├── DATA.txt  # Exemple de fichier d'entrée
 │   └── FICNET.txt   # Rapport de sortie attendu 
 │
@@ -109,7 +109,7 @@ et pointe vers la load library qui contient le module produit au step 1.
 
 ---
 
-## Comment lire les résultats — SDSF
+## Comment lire les résultats (SDSF)
 
 Après soumission (`SUB` en ISPF), consulter le spool via **SDSF** :
 
