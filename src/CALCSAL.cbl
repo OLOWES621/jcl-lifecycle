@@ -1,23 +1,23 @@
       *================================================================*
-      * PROGRAMME  : CALCSAL                                          *
-      * DESCRIPTION: Calcul du salaire net a partir du brut           *
+      * PROGRAMME  : CALCSAL                                           *
+      * DESCRIPTION: Calcul du salaire net a partir du brut            *
       *              Applique les cotisations sociales standard        *
-      * AUTEUR     : Olfie — Analyste Developpeur Mainframe           *
-      * VERSION    : 1.0                                              *
-      * LANGAGE    : COBOL IBM Enterprise (z/OS)                     *
+      * AUTEUR     : Olfie - Analyste Developpeur Mainframe            *
+      * VERSION    : 1.0                                               *
+      * LANGAGE    : COBOL IBM Enterprise (z/OS)                       *
       *----------------------------------------------------------------*
-      * ENTREE  : fichier sequentiel SALBRUT (DD SALBRUT)            *
-      *           Format : PIC 9(6)V99 — salaire brut mensuel        *
-      * SORTIE  : fichier sequentiel SALNET (DD SALNET)              *
-      *           Format : rapport lisible (SYSOUT ou fichier)       *
+      * ENTREE  : fichier sequentiel SALBRUT (DD SALBRUT)              *
+      *           Format : PIC 9(6)V99   salaire brut mensuel          *
+      * SORTIE  : fichier sequentiel SALNET (DD SALNET)                *
+      *           Format : rapport lisible (SYSOUT ou fichier)         *
       *================================================================*
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. CALCSAL.
+       PROGRAM-ID. CBL0010.
        AUTHOR. OLFIE.
 
       *----------------------------------------------------------------*
       * ENVIRONMENT DIVISION                                           *
-      * Declaration des fichiers logiques et physiques                *
+      * Declaration des fichiers logiques et physiques                 *
       *----------------------------------------------------------------*
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
@@ -110,11 +110,11 @@
            05  FILLER               PIC X(02) VALUE SPACES.
            05  LIG-PRENOM           PIC X(15).
            05  FILLER               PIC X(02) VALUE SPACES.
-           05  LIG-BRUT             PIC ZZ.ZZ9,99.
+           05  LIG-BRUT             PIC ZZBZZ9,99.
            05  FILLER               PIC X(02) VALUE SPACES.
-           05  LIG-COTIS            PIC ZZ.ZZ9,99.
+           05  LIG-COTIS            PIC ZZBZZ9,99.
            05  FILLER               PIC X(02) VALUE SPACES.
-           05  LIG-NET              PIC ZZ.ZZ9,99.
+           05  LIG-NET              PIC ZZBZZ9,99.
            05  FILLER               PIC X(40) VALUE SPACES.
 
        01  WS-LIGNE-ENTETE.
