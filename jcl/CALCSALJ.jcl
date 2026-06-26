@@ -1,5 +1,5 @@
 //*================================================================*
-//* JCL : CBL0010J                                                 *
+//* JCL : CALCSALJ                                                 *
 //* OBJET : Cycle de vie complet en un seul JOB                    *
 //*         Compilation + Link-Edit + Execution                    *
 //*                                                                *
@@ -9,11 +9,11 @@
 //*                                                                *
 //* RETOUR ATTENDU : RC=0 sur tous les steps                       *
 //*================================================================*
-//CBL0010J JOB 1,NOTIFY=&SYSUID,MSGLEVEL=(2,1),RESTART=*
+//CALCSALJ JOB 1,NOTIFY=&SYSUID,MSGLEVEL=(2,1),RESTART=*
 //***************************************************/
 //COBRUN  EXEC IGYWCL
-//COBOL.SYSIN  DD DSN=&SYSUID..CBL(CBL0010),DISP=SHR
-//LKED.SYSLMOD DD DSN=&SYSUID..LOAD(CBL0010),DISP=SHR
+//COBOL.SYSIN  DD DSN=&SYSUID..CBL(CALCSAL),DISP=SHR
+//LKED.SYSLMOD DD DSN=&SYSUID..LOAD(CALCSAL),DISP=SHR
 //***************************************************/
 //DEL     EXEC PGM=IDCAMS
 //SYSPRINT DD SYSOUT=*
@@ -23,7 +23,7 @@
 //***************************************************/
 // IF RC = 0 THEN
 //***************************************************/
-//RUN     EXEC PGM=CBL0010
+//RUN     EXEC PGM=CALCSAL
 //STEPLIB   DD DSN=&SYSUID..LOAD,DISP=SHR
 //SYSOUT    DD SYSOUT=*,OUTLIM=15000
 //CEEDUMP   DD DUMMY
