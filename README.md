@@ -151,14 +151,6 @@ Après soumission (`SUB` en ISPF), consulter le spool via **SDSF** :
 ### Environnement technique
 VSCode · GitHub · COBOL  · JCL
 
-| RC   | Signification |
-|------|---------------|
-| 0    | OK > pas d'anomalie |
-| 4    | Warning > à analyser mais non bloquant |
-| 8    | Erreur > step en anomalie |
-| 12   | Erreur grave > arrêt recommandé |
-| 16   | Erreur critique |
-
 ---
 
 ## Auteur
