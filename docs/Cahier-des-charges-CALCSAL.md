@@ -1,9 +1,4 @@
-- Auteur : [[Olfie OWAYE]]
-- URL : https://github.com/olow-lab/jcl-lifecycle
-- Date : 2026-06-26
----
-
-Programme COBOL de **calcul du salaire net à partir du salaire brut**
+# Programme COBOL de calcul du salaire net à partir du salaire brut
 
 ## 1. Objectif
 
